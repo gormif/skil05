@@ -1,0 +1,85 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after 
+{
+    box-sizing: inherit;
+}
+
+html 
+{
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 16px;
+}
+
+main 
+{
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px;
+}
+ h2
+ {
+     font-size: 22px;
+ }
+.cards 
+{
+    background: #eee;
+    align-items:stretch;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 22px;
+}
+
+.card 
+{
+    background: #fff;
+    max-width: 470px;
+    max-height: 300px;
+    border: 2px #aaa solid;
+    border-radius: 5px;
+    word-break: break-all;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    
+    justify-content:flex-start;
+    display:flex;
+    flex-wrap: nowrap;
+    max-height: 100%;
+    
+}
+.card div > div:first-child
+{
+    overflow:  auto;
+    margin-bottom: 10px;
+}
+.card div > div + div
+{
+    min-width:150px;
+    max-width: 150px;
+    overflow: auto;
+
+}
+img
+{
+    align-self:flex-start;
+    max-width: 100%;
+}
+ul 
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    font-weight:bold;
+}
